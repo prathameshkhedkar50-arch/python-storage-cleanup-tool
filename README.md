@@ -1,42 +1,74 @@
 # Python Storage Cleanup Tool
 
-A Python-based utility for managing disk space by cleaning unnecessary files, compressing data, organizing storage, and generating cleanup reports. This project provides multiple utilities to help automate common storage management tasks and improve disk usage efficiency.
+A Python-based storage management and cleanup utility that combines traditional file system operations with AI-assisted analysis using the **Groq API**. The project helps automate storage optimization through cleanup utilities, compression, decoding, trash management, and AI-powered recommendations.
 
 ---
 
-## 📖 Project Overview
+## 🚀 Project Overview
 
-The Python Storage Cleanup Tool is a collection of utilities designed to simplify storage management. It includes scripts for cleaning temporary files, compressing data, managing trash, generating cleanup reports, and other file management operations.
+Python Storage Cleanup Tool is a modular command-line application that helps organize and optimize disk storage. Along with standard cleanup operations, it integrates **Groq LLM** to analyze Python source files and provide intelligent cleanup suggestions.
 
-The project demonstrates practical use of Python for filesystem automation, file handling, compression, and report generation.
+The project demonstrates practical usage of Python for automation, filesystem management, compression, JSON processing, and AI integration.
 
 ---
 
-## ✨ Features
+# ✨ Features
 
+- AI-powered cleanup analysis using **Groq**
 - Disk cleanup utilities
-- File compression
 - Storage optimization
+- File compression
 - Trash management
-- Cleanup report generation
+- Python file analysis
 - File decoding utilities
-- AI-related cleanup utilities
-- JSON report generation
-- Simple command-line execution
-- Modular Python scripts
+- Cleanup report generation
+- JSON report support
+- Modular command-line utilities
+- Cross-platform Python implementation
 
 ---
 
-## 🛠️ Technologies Used
+# 🤖 AI Integration
 
-- Python 3.x
+The project integrates the **Groq API** to analyze Python files and provide intelligent cleanup suggestions.
+
+AI capabilities include:
+
+- Source code analysis
+- Cleanup recommendations
+- Code quality suggestions
+- Automation support
+- JSON-based AI responses
+
+> **Security Note:**  
+> API keys are **not stored in the repository**. Configure your own `GROQ_API_KEY` as an environment variable before running AI-related utilities.
+
+Example:
+
+```bash
+export GROQ_API_KEY=your_api_key
+```
+
+Windows PowerShell:
+
+```powershell
+$env:GROQ_API_KEY="your_api_key"
+```
+
+---
+
+# 🛠 Technologies Used
+
+- Python 3
+- Groq API
 - JSON
 - File System Operations
+- Environment Variables
 - Standard Python Libraries
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 python-storage-cleanup-tool/
@@ -48,41 +80,36 @@ python-storage-cleanup-tool/
 ├── drive_cleanup.py
 ├── trash.py
 │
-├── sample_reports/
-│   ├── cleanup_report.json
-│   └── trash_report.json
-│
-├── requirements.txt
-├── .gitignore
 ├── README.md
-└── LICENSE
+├── requirements.txt
+└── .gitignore
 ```
 
 ---
 
-## 🚀 Installation
+# ⚙ Installation
 
-### Clone Repository
+Clone the repository
 
 ```bash
-git clone https://github.com/your-username/python-storage-cleanup-tool.git
+git clone https://github.com/prathameshkhedkar50-arch/python-storage-cleanup-tool.git
 ```
 
-### Navigate to Project
+Navigate to the project
 
 ```bash
 cd python-storage-cleanup-tool
 ```
 
-### Create Virtual Environment
-
-Windows
+Create a virtual environment
 
 ```bash
 python -m venv .venv
 ```
 
 Activate
+
+Windows
 
 ```bash
 .venv\Scripts\activate
@@ -91,11 +118,10 @@ Activate
 Linux/macOS
 
 ```bash
-python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### Install Dependencies
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -103,11 +129,21 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Usage
+# 🔑 Environment Variables
 
-Run any utility individually.
+Create a `.env` file or configure the environment variable:
 
-Example:
+```text
+GROQ_API_KEY=your_api_key
+```
+
+Never commit your API key to GitHub.
+
+---
+
+# ▶ Usage
+
+Run any module individually.
 
 ```bash
 python drive_cleanup.py
@@ -118,7 +154,11 @@ python compressorv1.py
 ```
 
 ```bash
-python trash.py
+python cleanup_ai.py
+```
+
+```bash
+python ai_cleanup.py
 ```
 
 ```bash
@@ -126,62 +166,54 @@ python decoder.py
 ```
 
 ```bash
-python ai_cleanup.py
+python trash.py
 ```
 
 ---
 
-## 📄 Reports
+# 📚 Learning Outcomes
 
-The application can generate JSON reports containing cleanup information.
-
-Example reports include:
-
-- cleanup_report.json
-- trash_report.json
-
----
-
-## 📌 Learning Outcomes
-
-This project helped strengthen practical experience with:
+This project demonstrates practical experience with:
 
 - Python scripting
-- File handling
-- Directory traversal
+- AI API integration
+- Groq LLM
+- Environment variable management
+- Filesystem automation
 - JSON processing
-- Storage management
-- Compression techniques
-- Command-line utilities
-- Modular project organization
+- Storage optimization
+- Compression
+- Command-line application development
+- Modular software design
 
 ---
 
-## 🔮 Future Improvements
+# 🔮 Future Improvements
 
-- Graphical User Interface (GUI)
-- Command-line argument support
-- Scheduled automatic cleanup
+- Interactive CLI
+- GUI version
 - Duplicate file detection
 - Large file analyzer
-- Log management
-- Cross-platform improvements
+- Scheduled cleanup
+- AI-generated cleanup reports
+- Progress indicators
 - Unit testing
+- Logging system
 
 ---
 
-## 📜 License
+# 📄 License
 
-This project is released under the MIT License.
+This project is licensed under the MIT License.
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Prathamesh Khedkar**
 
-Python Developer
+GitHub: https://github.com/prathameshkhedkar50-arch
 
 ---
 
-⭐ If you found this project useful, consider giving it a Star on GitHub.
+⭐ If you found this project useful, consider giving it a Star.
